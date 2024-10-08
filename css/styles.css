@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+    padding-top: 60px; /* Adjust the padding to account for the fixed navbar */
+}
+
+.navbar {
+    box-shadow: 0 4px 2px -2px gray; /* Adds a shadow for a more pronounced navbar */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card {
+    text-align: center; /* Center the content of each card */
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 50; /* Adjust height for smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .card-img-top {
+        height: 50vh; /* Adjust height for larger screens */
+    }
+}
+
+
+.navbar .btn-secondary {
+    background-color: #6c757d; /* Default Bootstrap secondary color */
+    border: none;
+}
+
+.navbar .btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade for hover effect */
+}
+
+/* Ensure the navbar items are always visible and aligned */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+/* Adjust balance and username styling */
+#user-balance {
+    font-weight: bold;
+    margin-right: 0.5rem; /* Space between balance and username */
+    pointer-events: none; /* This ensures the balance text is not clickable */
+}
+
+
+/* Make sure dropdown items are properly aligned */
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+
+/* CSS for the pop-out message */
+.alert-container {
+    position: fixed;
+    top: 20px; /* Distance from the top of the screen */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position by half of its width */
+    z-index: 1050; /* Make sure it appears on top of other content */
+    width: 300px; /* Set a fixed width */
+    max-width: 100%; /* Ensure it doesn't overflow the screen */
+    text-align: center; /* Center text inside the alert */
+}
+
+.alert-container .alert {
+    margin: 0;
+    border-radius: 0.25rem;
+}
+
+
+
